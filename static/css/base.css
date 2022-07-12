@@ -1,0 +1,5 @@
+footer {
+    background: url('/media/footer.png') repeat-x center scroll;
+    height: 250px;
+    background-size: contain;
+}
