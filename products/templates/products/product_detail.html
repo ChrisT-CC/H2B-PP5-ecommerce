@@ -51,14 +51,14 @@
                                 </div>
 
                                 <div class="col-12">
-                                    <a href="{% url 'products' %}" class="btn btn-warning text-dark">Keep shopping</a>
-                                    <input type="submit" class="btn btn-warning text-dark" value="Add to Bag">
+                                    <a href="{% url 'products' %}" class="btn btn-warning text-dark"><strong>Keep shopping</strong></a>
+                                    <input type="submit" class="btn btn-warning font-weight-bold text-dark" value="Add to Bag">
                                 </div>
                                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             </div>
                         </form>
                     {% else %}
-                        <a href="{% url 'products' %}" class="btn btn-warning text-dark">Keep shopping</a>
+                        <a href="{% url 'products' %}" class="btn btn-warning text-dark"><strong>Keep shopping</strong></a>
                     {% endif %}
                 </div>
             </div>
