@@ -17,7 +17,7 @@
                 <a class="nav-link" href="{% url 'products' %}">Shop</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="{% url 'home' %}#about">About</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link disabled" href="#">ToBe...</a>
@@ -57,7 +57,7 @@
                 </div>
             </li>
             <li>
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{% url 'view_bag' %}">
                     <span><i class="fa-solid fa-cart-shopping fa-xl text-warning"></i></span>
                 </a>
             </li>

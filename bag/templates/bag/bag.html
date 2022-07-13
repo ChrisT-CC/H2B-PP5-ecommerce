@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<!-- page title -->
+<div class="container-fluid">
+    <div class="row bg-dark">
+        <div class="col text-center text-warning">
+            <h2 class="pb-2">Shopping bag</h2>
+        </div>
+    </div>
+</div>
+<!-- bag content -->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <p class="lead mb-5">Your bag is empty.</p>
+            <a href="{% url 'products' %}" class="btn btn-warning text-dark">Keep shopping</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
