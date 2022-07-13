@@ -14,8 +14,14 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <p class="lead mb-5">Your bag is empty.</p>
-            <a href="{% url 'products' %}" class="btn btn-warning text-dark">Keep shopping</a>
+            {% if bag_items %}
+                <div class="table-responsie">
+                    {{ bag_items }}
+                </div>
+            {% else %}
+                <p class="lead mb-5">Your bag is empty.</p>
+                <a href="{% url 'products' %}" class="btn btn-warning text-dark">Keep shopping</a>
+            {% endif %}
         </div>
     </div>
 </div>
