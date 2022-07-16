@@ -1,3 +1,9 @@
+/* Globals */
+:root {
+    --warning: #FFC107;
+    --dark: #343A40;
+}
+
 footer {
     background: url('/media/footer.png') repeat-x center scroll;
     height: 250px;
@@ -6,4 +12,24 @@ footer {
 
 #about {
     background-color: #E1E5EE;
+}
+
+.input-number {
+    text-align: center;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+/* Remove arrows in input number form field */
+
+/* In Chrome, Safari, Edge, Opera */
+.input-number::-webkit-outer-spin-button,
+.input-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* In Firefox */
+.input-number {
+    -moz-appearance: textfield;
 }

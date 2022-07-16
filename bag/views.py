@@ -11,8 +11,11 @@ def view_bag(request):
 def add_to_bag(request, item_id):
     """A view to add a quantity of the specified product to the shopping bag"""
 
+    # Get quantity as integer and redirect URL from the form
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
+    # Get the bag variable's content from the session, or create it as an empty
+    # dictionary if doesn't exist
     bag = request.session.get('bag', {})
 
     if item_id in list(bag.keys()):
