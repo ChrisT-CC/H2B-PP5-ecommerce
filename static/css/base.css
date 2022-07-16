@@ -33,3 +33,8 @@ footer {
 .input-number {
     -moz-appearance: textfield;
 }
+
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
