@@ -4,6 +4,10 @@
     --dark: #343A40;
 }
 
+body {
+    color: var(--dark);
+}
+
 footer {
     background: url('/media/footer.png') repeat-x center scroll;
     height: 250px;
