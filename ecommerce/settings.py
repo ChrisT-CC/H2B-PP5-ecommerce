@@ -92,6 +92,7 @@ TEMPLATES = [
     },
 ]
 
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 # Code from Django-allauth documentation
 # https://django-allauth.readthedocs.io/en/latest/installation.html

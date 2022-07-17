@@ -38,3 +38,20 @@ footer {
 .remove-item {
     cursor: pointer;
 }
+
+/* Toasts */
+
+.message-container {
+    position: fixed;
+    top: 75px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
