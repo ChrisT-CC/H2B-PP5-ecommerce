@@ -1,0 +1,43 @@
+:root {
+    --warning: #FFC107;
+    --dark: #343A40;
+    --secondary: #6c757d;
+}
+
+.StripeElement,
+.stripe-style-input {
+  box-sizing: border-box;
+  color: var(--dark);
+  height: 40px;
+  padding: 10px 12px;
+  border: 1px solid var(--warning);
+  background-color: #E1E5EE;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus,
+.stripe-style-input:focus,
+.stripe-style-input:active {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.stripe-style-input::placeholder {
+    color: var(--secondary);
+}
+
+.fieldset-label {
+    position: relative;
+    right: .5rem;
+}
+
+#payment-form .form-control,
+#card-element {
+    color: var(--dark);
+    border-radius: 5px;
+    border: 1px solid var(--warning);
+}
