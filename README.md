@@ -38,6 +38,32 @@ This is an e-commerce website created in Django as my 5th project for my **Full 
 
 ### Wireframes
 
+The wireframes were created in [Balsamiq](https://balsamiq.com/). They were used to set an impression of how the website should look like. There are examples of three different screen sizes.
+
+- Home page
+
+![Home](docs/wireframes/home.png)
+
+- Products page
+
+![Products](docs/wireframes/products.png)
+
+- Product Details page
+
+![Product Details](docs/wireframes/product_details.png)
+
+- Cart page
+
+![Cart](docs/wireframes/cart.png)
+
+- Checkout page
+
+![Checkout](docs/wireframes/checkout.png)
+
+- Profile page
+
+![Profile](docs/wireframes/profile.png)
+
 [Back to top](#Table-of-contents)
 
 ---
