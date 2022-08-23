@@ -1,0 +1,2 @@
+# Files or folders that will not be sent to Heroku
+/docs
