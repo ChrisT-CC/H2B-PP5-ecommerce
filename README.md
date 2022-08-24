@@ -11,7 +11,11 @@ This is an e-commerce website created in Django as my 5th project for my **Full 
     - [Wireframes](#Wireframes)
     - [Database schema](#Database-schema)
     - [Style and colours](#Style-and-colours)
-2. [Features](#Features)
+2. [Web marketing](#Web-marketing)
+    - [SEO](#Search-Engine-Optimization-(SEO))
+    - [Social media marketing](#Social-media-marketing)
+    - [Email marketing](#Email-marketing)
+3. [Features](#Features)
     - [Existing Features](#Existing-Features)
         - [Feature1](#Feature1)
         - [Feature2](#Feature2)
@@ -19,10 +23,10 @@ This is an e-commerce website created in Django as my 5th project for my **Full 
     - [Future Features](#Future-Features)
         - [Future Feature1](#Future-Feature1)
         - [Future Feature1](#Future-Feature1)
-3. [Technologies Used](#Technologies-Used)
-4. [Testing](#Testing)
-5. [Deployment](#Deployment)
-6. [Credits](#Credits)
+4. [Technologies Used](#Technologies-Used)
+5. [Testing](#Testing)
+6. [Deployment](#Deployment)
+7. [Credits](#Credits)
 
 ---
 
@@ -75,6 +79,42 @@ The wireframes were created in [Balsamiq](https://balsamiq.com/). They were used
 ---
 
 ### Style and colours
+
+[Back to top](#Table-of-contents)
+
+---
+
+## Web marketing
+
+Because this is a new business I chose to use free web marketing strategies. The strategies used are:
+
+- SEO and content marketing
+- social media marketing
+- email marketing
+
+### Search Engine Optimization (SEO)
+
+SEO refers to optimizing the web pages and content for better search engine rankings.
+
+I tried my best to use **SEO techniques** learned, like: semantic HTML, minimizing keyword stuffing, using keywords in natural sentences in text content, using descriptive alt attribute for images, using description and keywords in metadata and using noopener in rel and descriptive aria-label attributes for external links.
+
+The **keywords** used were both short-tail and long-tail keywords and were generated after a combinantion of brainstorming, analyzing business's type, needs and potential customers. The process continued with googling them, checking "related searches", "people also ask" sections and the autocomplete feature of google search bar.
+
+- TO DO - robots.txt and sitemap.xml
+
+### Social media marketing
+
+The social media platform chosen for web marketing was Facebook, because it has the largest number of users and the widest demographic. A mockup Facebook business page was created in [Balsamiq](https://balsamiq.com/). The purpose of a Facebook bussines page is to get potential customers attention on the business and to promote company's products and services.
+
+![Facebook business page mockup](docs/images/fb-mockup.png)
+
+[Back to top](#Table-of-contents)
+
+### Email marketing
+
+Email marketing refers to using email to send direct marketing messages to people, in an effort to gain new customers or retain existing ones. This can be in the form of a regular newsletter, or emails to previous customers letting them know about new sales and promotions.
+
+![Newsletter](docs/images/newsletter.jpg)
 
 [Back to top](#Table-of-contents)
 
@@ -178,4 +218,4 @@ Testing was done...
 
 ---
 
-## *Disclaimer: This project is for learning purposes only*
+### *Disclaimer: This project is for learning purposes only*
