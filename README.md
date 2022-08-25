@@ -14,16 +14,17 @@ This project was created in Django as my 5th project for my **Full stack Softwar
 
 ## Table of contents
 
-1. [UX](#UX)
+1. [Business Model](#Business-Model)
+2. [UX](#UX)
     - [User Stories](#User-Stories)
     - [Wireframes](#Wireframes)
     - [Database schema](#Database-schema)
     - [Style and colours](#Style-and-colours)
-2. [Web marketing](#Web-marketing)
-    - [SEO](SEO)
+3. [Web marketing](#Web-marketing)
+    - [SEO](#SEO)
     - [Social media marketing](#Social-media-marketing)
     - [Email marketing](#Email-marketing)
-3. [Features](#Features)
+4. [Features](#Features)
     - [Existing Features](#Existing-Features)
         - [Feature1](#Feature1)
         - [Feature2](#Feature2)
@@ -31,18 +32,87 @@ This project was created in Django as my 5th project for my **Full stack Softwar
     - [Future Features](#Future-Features)
         - [Future Feature1](#Future-Feature1)
         - [Future Feature1](#Future-Feature1)
-4. [Technologies Used](#Technologies-Used)
-5. [Testing](#Testing)
-6. [Deployment](#Deployment)
-7. [Credits](#Credits)
+5. [Technologies Used](#Technologies-Used)
+6. [Testing](#Testing)
+7. [Deployment](#Deployment)
+8. [Credits](#Credits)
+
+---
+
+## Business Model
+
+The business model for this e-commerce store is B2C (Business to Customer) model. The customers are buying honey and honey bee products online for which they make individual card payments using stripe payment system.
+
+[Back to top](#Table-of-contents)
 
 ---
 
 ## UX
 
----
+Honey2buy e-commerce website was created using a Design Thinking and Agile software development approach.
+
+For the Agile methodology GitHub Projects was used as a kanban board. The user stories were added as [issues](https://github.com/ChrisT-CC/H2B-PP5-ecommerce/issues), prioritised and automated to move to "To Do" column in [H2B-PP5-E-commerce](https://github.com/ChrisT-CC/H2B-PP5-ecommerce/projects/2). The issues can be assign to the contributors (if more then one-man-team) and can be commented on.
+
+In "To Do" column individual task cards with subtasks checkboxes were also added to better keep track of the project's workflow
+
+From "To Do" column the cards were moved to the "In progress" column based on current tasks
+
+From "In progress" column, the cards were moved to "Done" column when the tasks were finished and tested
+
+At the end of the project the issues can be closed. The remaining issues, if there are any, can be reassesed and relabeld (as future feature for example). In this project, the issues were not closed to be able to be used as proof of work.
+
+Along with GitHub Projects, other tools or helpers were used, like: a spreadsheet, a pomodoro tracker and a good old notebook.
+
+![Spreadsheet](/docs/images/spreadsheet.jpg)
+
+![Pomodoro tracker](/docs/images/pomodoro.jpg)
+
+[Back to top](#Table-of-contents)
 
 ### User Stories
+
+The [user stories](https://github.com/ChrisT-CC/H2B-PP5-ecommerce/issues) were used as an agile software development process to guide the development of the application. They were split in different categories and used as epics. MoSCoW prioritization was used after the user stories were written to identify the scope of the project, by adding labels: Must Have, Should Have, Could Have, Won't Have.
+
+|  ID | AS A        |                           I WANT TO BE ABLE TO...                          | SO THAT I CAN...                                                                                |             |
+|-----|-------------|:--------------------------------------------------------------------------:|-------------------------------------------------------------------------------------------------|-------------|
+|     |             |                           **Viewing and navigation**                           |                                                                                                 |             |
+|   1 | shopper     | see a list of products                                                     | select some of them to buy                                                                      | Must Have   |
+|   2 | shopper     | view a specific category of products                                       | find products I want without having to search through all products                              | Must Have   |
+|   3 | shopper     | view individual product details                                            | find details like: price, description, rating, image/s, availability                            | Must Have   |
+|   4 | shopper     | identify special offers                                                    | take advantage of special savings                                                               | Should Have |
+|   5 | shopper     | see the total of my purchases                                              | keep an eye on my expences                                                                      | Must Have   |
+|   6 | shopper     | see a notification bubble next to my shopping cart                         | see if and how many items I have in the cart                                                    | Could Have  |
+|   7 | shopper     | save products I like                                                       | check my favorite products                                                                      | Should Have |
+|   8 | shopper     | review products                                                            | give feedback to other users or owner                                                           |             |
+|     |             |                      **Honey and beekeeping information**                      |                                                                                                 |             |
+|   9 | site user   | find information about local honey and honey bees                          | improve my knoledge and take informed decissions when buying and using honey and honey products | Must Have   |
+|  10 | site user   | see a list of practical gardening and honey bee related advices and videos | understand and get involved with local beekeeping if I want to                                  | Should Have |
+|  11 | site user   | see a section of dedicated beekeeping events                               | participate if want to                                                                          | Could Have  |
+|  12 | site user   | register to a periodical newsletter                                        | receive personalized offers and information about honey and beekeeping                          | Must Have   |
+|     |             |                       **Registration and User** Accounts                       |                                                                                                 |             |
+|  13 | site user   | register for an account                                                    | have a personal account and view my profile                                                     | Must Have   |
+|  14 | site user   | login or logout                                                            | access and use my personal info                                                                 | Must Have   |
+|  15 | site user   | receive an email confirmation at registration                              | get successful registration feedbak                                                             | Must Have   |
+|  16 | site user   | have a user profile                                                        | save payment info and view order history and order confirmations                                | Must Have   |
+|     |             |                            **Sorting and Searching**                           |                                                                                   |             |
+|  17 | shopper     | sort the list of products                                                  | check if a product is in stock or not                                                           | Must Have   |
+|  18 | shopper     | search for a product by name, type or description                          | find a specific product                                                                         | Must Have   |
+|     |             |                           **Purchasing and Checkout**                          |                                                                                                 |             |
+|  19 | shopper     | view my shopping cart                                                      | check the total cost of my purchase and all items in it                                         | Must Have   |
+|  20 | shopper     | select the quantity of a product when purchasing it                        | select the right product, quantity or size                                                      | Must Have   |
+|  21 | shopper     | edit the quantity of items in my shopping cart                             | make changes to my purchase before checkout                                                     | Must Have   |
+|  22 | shopper     | enter my payment information                                               | check out clearly and easily                                                                    | Must Have   |
+|  23 | shopper     | view an order confirmation at checkout                                     | verify that I haven't made any mistakes                                                         | Must Have   |
+|  24 | shopper     | receive an email confirmation after checking out                           | have a proof of purchase                                                                        | Must Have   |
+|     |             |                          **Admin and Store Managment**                         |                                                                                                 |             |
+|  25 | store owner | add a products and services                                                | add new items or services to my store                                                           | Must Have   |
+|  26 | store owner | update individual products and services                                    | keep an up-to-date stock                                                                        | Must Have   |
+|  27 | store owner | delete a product or service                                                | remove items or services that are no longer for sale                                            | Must Have   |
+|  28 | store owner | display our privacy policy                                                 | guarantee our site users security                                                               | Should Have |
+|  29 | store owner | post, edit and delete blog articles about beekeeping and honey             | improve my website's content                                                                    | Could Have  |
+|  30 | store owner | post, edit and delete beekeeping videos                                    | teach beginner beekeepers how to care for honeybees                                             | Could Have  |
+|  31 | store owner | edit and send newsletters to our members                                   | send offers, surveys or information about local honey and beekeeping                            | Must Have   |
+|  32 | store owner | show business social media links                                           | help users connect with our bussines                                                            | Must Have   |
 
 [Back to top](#Table-of-contents)
 
@@ -82,11 +152,32 @@ The wireframes were created in [Balsamiq](https://balsamiq.com/). They were used
 
 ### Database schema
 
+The db is based heavily on Code Institute's walkthrough project [Butique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1) with a few modifications.
+
+The models used are:
+
+- User - Django default model
+- Profile - BA model minus country field
+- Order - BA model minus country, grand_total and delivery_cost fields
+- OrderLineItem - BA model minus product_sizes field
+- Product - BA model minus has_sizes field, plus quantity field
+- Category - BA model unaltered
+- Review - Custom built
+- Wishlist - Custom built
+
+You can see the models and relationships below:
+
+![Database schema](docs/images/db.jpg)
+
 [Back to top](#Table-of-contents)
 
 ---
 
 ### Style and colours
+
+Honey2buy website uses minimalistic light styling. The colours used were inspired by honey bees colours, yelow and black. A combination of [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) classes (dark, light and warning) were used to generate the colours of website with white as background. In addition, danger and primary classes were used to differentiate the refresh and bin icons in shopping bag page.
+
+![Colour palette](docs/images/palette.jpg)
 
 [Back to top](#Table-of-contents)
 
