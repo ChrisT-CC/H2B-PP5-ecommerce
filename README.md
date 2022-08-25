@@ -1,6 +1,14 @@
-# CI - PP5 Django e-commerce website
+# [Honey2buy](https://honey2buy.herokuapp.com/)
 
-This is an e-commerce website created in Django as my 5th project for my **Full stack Software Develompent** course from **[Code Institute](https://codeinstitute.net/)**
+This is an e-commerce website where hobby beekeepers from London and around can sell their honey and other honey bee products.
+
+The healthy products will be sold in UK only and as a new business all deliveries will be free, as an atempt to form a hub of natural honey lovers.
+
+A link to the live project can be found [here](https://honey2buy.herokuapp.com/).
+
+This project was created in Django as my 5th project for my **Full stack Software Develompent** course from **[Code Institute](https://codeinstitute.net/)**
+
+![Mockup image](/docs/images/mockup.jpg)
 
 ---
 
