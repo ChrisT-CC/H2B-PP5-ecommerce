@@ -324,9 +324,93 @@ Testing was done...
 
 ![bug1](img/bug3)
 
+[Back to top](#Table-of-contents)
+
 ---
 
 ## Deployment
+
+The project's repo was hosted on GitHub and it was deployed on Heroku
+
+### Heroku Setup and CLI
+
+Unfortunately, deploying to GitHub Pages won't work, since it can only handle front-end files such as HTML, CSS, and JavaScript. So the project needs to be deployed to a hosting platform that can render Python files. One such platform is [Heroku](https://id.heroku.com/login).
+
+- sign up / login to [Heroku](https://id.heroku.com/login) website
+- if necessary, install the heroku CLI in Gitpod: `curl https://cli-assets.heroku.com/install.sh | sh`
+- login to Heroku CLI: `heroku login -i`
+
+### Installing Project Requirements
+
+Because Heroku uses an ephemeral file system, we can't use the local `db.sqlite3` database. We use instead a database called Postgres.
+
+- install Postgres: `pip3 install psycopg2-binary`
+- install webserver: `pip3 install gunicorn` - replaces the development server once the app is deployed to Heroku
+- create a requirements file: `pip3 freeze --local > requirements.txt` - creates a file to let heroku know which packages to install
+
+### Creating an Heroku App
+
+A Heroku app can be created in CLI or on [Heroku website](https://id.heroku.com)
+
+- create the app in CLI: `heroku apps:create app-name --region eu`
+- view the apps in CLI: `heroku apps`
+- view the key remotes in CLI: `git remote -v`
+
+### Creating a New Database on Heroku
+
+The database is created on heroku website.
+
+- in heroku app under the "Resources" tab, underneath the "Add-ons" section type `heroku postgress`
+- choose `Hobby Dev - Free` option
+- in "Settings" press "Reveal Config Vars" to see see that Heroku has created a DATABASE_URL for us to connect to from inside Django
+- to see it in CLI type: "heroku addons"
+
+**Important** - If you want to create this database with MySql instead of Postgres use DB add-on.
+
+### Connecting to Our Remote Database
+
+Set up the Django app to connect to the remote database.
+
+- install a database url package: `pip3 install dj-database-url` - this package allows us to parse the database url that Heroku created
+- refreeze the requirements file: `pip3 freeze --local > requirements.txt`
+- get the url of the remote database in CLI: `heroku config -a app-name`
+- in `settings.py` modify the original "DATABASE" settings to replace the value of the default database with the database url from Heroku
+- import "dj_database_url"
+- run migrations: `python3 manage.py migrate`
+- update `.gitignore`
+
+### Connecting Heroku to Github
+
+By connecting Heroku to Github the application will automatically deploy the latest code to Heroku.
+
+- in heroku app, open app, in "Deploy" tab, under the "Deployment method" setting select "GitHub"
+- search for repository and click "Connect"
+- choose "Enable Automatic Deploys"
+- modify `settings.py` to use environment variables
+- add the environment variables to Heroku
+- confirm Heroku to Github connection
+
+### The Development Environment
+
+Set up a local development environment so that you don't have to change any settings to run the project in gitpod.
+
+- modify `settings.py`:
+  - create a new "development" variable
+  - set "Debug" to development
+  - modify the "DATABASES" configuration and add an if statement
+  - add a "localhost" as an ALLOWED_HOST if development = True
+  - else use the HEROKU_HOSTNAME environment variable
+- add a new environment variable set to TRUE
+- restart workspace
+- run server
+
+### Config vars
+
+A series of config vars have to be created in Heroku, to conect the app to Django, AWS, stripe and email.
+
+The final list of config vars in Heroku can be seen below
+
+![Config vars](/docs/images/config-vars.jpg)
 
 [Back to top](#Table-of-contents)
 
