@@ -348,7 +348,7 @@ Because Heroku uses an ephemeral file system, we can't use the local `db.sqlite3
 - install webserver: `pip3 install gunicorn` - replaces the development server once the app is deployed to Heroku
 - create a requirements file: `pip3 freeze --local > requirements.txt` - creates a file to let heroku know which packages to install
 
-### Creating an Heroku App
+### Creating a Heroku App
 
 A Heroku app can be created in CLI or on [Heroku website](https://id.heroku.com)
 
@@ -411,6 +411,31 @@ A series of config vars have to be created in Heroku, to conect the app to Djang
 The final list of config vars in Heroku can be seen below
 
 ![Config vars](/docs/images/config-vars.jpg)
+
+### Github
+
+Create a new repository
+
+- Log into [GitHub](https://github.com/)
+- On the 'Repositories' tab click 'New'
+- Name the repository and click 'Create repository'
+
+#### Forking
+
+- Sign into Github and go to my [repo](https://github.com/ChrisT-CC/H2B-PP5-ecommerce)
+- Press the "Fork" button the top right corner of page
+- Click "Create fork"
+
+#### Cloning
+
+- Sign in to Github and go to my [repo](https://github.com/ChrisT-CC/H2B-PP5-ecommerce)
+- Above the list of files click "Code"
+- Select HTTPS, SSH or Github CLI, then click the copy button to get the URL
+- Open your IDE of choice
+- Type "git clone" and then paste the URL you copied
+- Press Enter
+
+[Cloning a repository In GitHub documantation](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 [Back to top](#Table-of-contents)
 
