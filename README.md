@@ -89,7 +89,7 @@ The [user stories](https://github.com/ChrisT-CC/H2B-PP5-ecommerce/issues) were u
 |  10 | site user   | see a list of practical gardening and honey bee related advices and videos | understand and get involved with local beekeeping if I want to                                  | Should Have |
 |  11 | site user   | see a section of dedicated beekeeping events                               | participate if want to                                                                          | Could Have  |
 |  12 | site user   | register to a periodical newsletter                                        | receive personalized offers and information about honey and beekeeping                          | Must Have   |
-|     |             |                       **Registration and User** Accounts                       |                                                                                                 |             |
+|     |             |                       **Registration and User Accounts**                       |                                                                                                 |             |
 |  13 | site user   | register for an account                                                    | have a personal account and view my profile                                                     | Must Have   |
 |  14 | site user   | login or logout                                                            | access and use my personal info                                                                 | Must Have   |
 |  15 | site user   | receive an email confirmation at registration                              | get successful registration feedbak                                                             | Must Have   |
@@ -175,7 +175,7 @@ You can see the models and relationships below:
 
 ### Style and colours
 
-Honey2buy website uses minimalistic light styling. The colours used were inspired by honey bees colours, yelow and black. A combination of [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) classes (dark, light and warning) were used to generate the colours of website with white as background. In addition, danger and primary classes were used to differentiate the refresh and bin icons in shopping bag page.
+Honey2buy website uses minimalistic light styling. The colours used were inspired by honey bees colours, yelow and black. A combination of [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) classes (dark, light and warning) were used to generate the colours of website with white as background. In addition, danger and primary classes were used to differentiate the refresh and bin icons in the shopping bag page.
 
 ![Colour palette](docs/images/palette.jpg)
 
@@ -336,7 +336,44 @@ Testing was done...
 
 ### Content
 
+Code Institute's walkthrough project [Butique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1) was heavily used to create this project.
+
+The [Django documentation](https://docs.djangoproject.com/en/3.2/) was very helpful.
+
+Other projects where I looked for inspiration:
+
+- Dennis Ivy's [Django Ecommerce Website](https://www.youtube.com/playlist?list=PL-51WBLyFTg0omnamUjL1TCVov7yDTRng)
+- JustDjango's [Build an Ecommerce Website with Django](https://www.youtube.com/playlist?list=PLLRM7ROnmA9F2vBXypzzplFjcHUaKWWP5)
+
+### Media
+
+Most of the images used came from [Pexels.com](https://www.pexels.com/). The majority of products images came from two real websites [littleoverapiaries.com](https://www.littleoverapiaries.com/shop/) and [apidae.co.uk](https://www.apidae.co.uk/englishhoney). The images were edited in [GIMP](https://www.gimp.org/) and compressed in [Compressjpeg](https://compressjpeg.com/). There is a detailed brakedown below.
+
+|   Images                 |           Source                            |
+|--------------------------|---------------------------------------------|
+| Favicon | [icon8.com](https://icons8.com/icons/set/honey) |
+| Logo image | [freepick.com](https://www.freepik.com/free-vector/honey-lettering-with-bees_7997317.htm#query=honey%20logo&position=21&from_view=search) |
+| Landing honeycomb image | [Photo by Archana GS from Pexels](https://www.pexels.com/photo/close-up-photo-of-honey-comb-4111270/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) |
+| Collage top left image | [Photo by Mareefe from Pexels](https://www.pexels.com/photo/clear-glass-bowl-beside-yellow-flower-1638280/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) |
+| Collage top right image | [Photo by Quang Nguyen Vinh from Pexels](https://www.pexels.com/photo/apiary-in-a-forest-11334353/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) |
+| Collage center image | [Photo by David Hablützel from Pexels](https://www.pexels.com/photo/bee-and-beehive-928978/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) |
+| Collage bottom left image | [Photo by furkanvari from Pexels](https://www.pexels.com/photo/photograph-of-beehives-near-flowers-4034986/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) |
+| Collage bottom right image |[Photo by Dmitry Glazunov from Pexels](https://www.pexels.com/photo/close-up-photo-of-beekeeper-holding-a-swarm-of-honey-bees-in-a-hive-frame-4247181/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) |
+| FB mockup main image | [Photo by Mật from Pexels](https://www.pexels.com/photo/glass-jars-and-a-honey-dipper-on-a-wooden-tray-9105966/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) |
+| Honeycomb in honey jar | [freeimages.com](https://www.freeimages.com/photo/sweet-as-honey-1550169) |
+| Jar of pollen | [freepick.com](https://www.freepik.com/free-photo/medicine-food-bee-pollen_10464255.htm#query=pollen%20granules&position=11&from_view=search) |
+| Mixed nuts honey jar | [thewoodenspoon.co.uk](https://www.thewoodenspoon.co.uk/curds-honeys-gingers/) |
+| Products images 1 | [littleoverapiaries.com](https://www.littleoverapiaries.com/shop/) |
+| Products images 2 | [apidae.co.uk](https://www.apidae.co.uk/englishhoney) |
+| Footer image | [freepick.com](https://www.freepik.com/free-vector/technological-honeycomb-black-golden-background_5329985.htm#query=honey%20logo&position=16&from_view=search) |
+
 ### Acknowledgements
+
+Thanks to my mentor for help, suggetions and time
+
+Thanks to Sean from CI Tutor assistance for help
+
+Thanks to my family, friends and peers for suggestions, reviews and feedback
 
 [Back to top](#Table-of-contents)
 
