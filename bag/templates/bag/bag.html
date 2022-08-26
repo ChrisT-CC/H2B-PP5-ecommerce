@@ -23,7 +23,7 @@
                                 <th scope="col">Product</th>
                                 <th scope="col"></th>
                                 <th scope="col">Price</th>
-                                <th scope="col">Quantity</th>
+                                <th scope="col">Quantity*</th>                               </th>
                                 <!-- <th scope="col"></th> -->
                                 <th scope="col">Subtotal</th>
                             </tr>
@@ -73,7 +73,7 @@
                                         </div>
                                     </form>
                                     <a class="update-link text-info ml-3">
-                                        <i class="fa fa-refresh fa-lg"></i>
+                                        <i class="fa fa-refresh fa-lg float-right"></i>
                                     </a>
                                 </td>
                                 <td class="py-3">
@@ -85,8 +85,9 @@
                             </tr>
                         {% endfor %}
                         <tr>
-                            <td colspan="5" class="mt-3 text-right bg-white">
-                                <h6><strong>Bag Total: £{{ total|floatformat:2 }}</strong></h6>
+                            <td colspan="5" class="mt-3 bg-white">
+                                <span class="my-0 small text-muted float-left">*Press the blue refresh button after you change quantity</span>
+                                <h6><strong class="float-right">Bag Total: £{{ total|floatformat:2 }}</strong></h6>
                             </td>
                         </tr>
                         <tr>

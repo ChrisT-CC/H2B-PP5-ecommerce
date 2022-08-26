@@ -18,6 +18,13 @@ footer {
     background-color: #E1E5EE;
 }
 
+.bag-count {
+    vertical-align: top;
+    position: absolute;
+    margin-left: -15px;
+    margin-top: -10px;
+}
+
 /* Forms */
 
 .input-number {
@@ -61,3 +68,4 @@ footer {
 .toast-capper {
     height: 2px;
 }
+

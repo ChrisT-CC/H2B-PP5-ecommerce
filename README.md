@@ -414,7 +414,7 @@ The final list of config vars in Heroku can be seen below
 
 ### Github
 
-Create a new repository
+#### Create a new repository
 
 - Log into [GitHub](https://github.com/)
 - On the 'Repositories' tab click 'New'
