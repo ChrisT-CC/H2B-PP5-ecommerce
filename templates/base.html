@@ -85,7 +85,7 @@
         <!-- Optional JavaScript -->
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
         </script>
         <!-- Popper JSs -->
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -101,7 +101,7 @@
 
     <!-- JavaScript that loads at the end of the body -->
     {% block postloadjs %}
-    <script type="text/javascript">
+    <script>
         $('.toast').toast('show', {delay:2000, animation:false});
     </script>
     {% endblock %}

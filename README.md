@@ -233,9 +233,21 @@ Email marketing refers to using email to send direct marketing messages to peopl
 
 ---
 
-- #### Feature2
+- #### 404 page
 
-![Feature2](path here: static/images/homepage.png)
+A custom 404 page for the 404 error, styled in line with the website
+
+![404 page](/docs/images/404-page.jpg)
+
+[Back to top](#Table-of-contents)
+
+---
+
+- #### 500 page
+
+A custom 500 page for the 500 error, styled in line with the website
+
+![404 page](/docs/images/500-page.jpg)
 
 [Back to top](#Table-of-contents)
 
@@ -308,21 +320,11 @@ Email marketing refers to using email to send direct marketing messages to peopl
 
 ## Testing
 
-Testing was done...
+Testing was done manually. Chrome Dev Tools was used extensively first to see how everything looks (positioning and styling) and for responsivness.
 
-### Found bugs
+Whenever there were errors in code I would use Chrome Dev Tools for debugging.
 
-- #### bug1
-
-![bug1](img/bug1)
-
-- #### bug2
-
-![bug2](img/bug2)
-
-- #### bug3
-
-![bug1](img/bug3)
+Testing and results can be found [here](/docs/testing.md).
 
 [Back to top](#Table-of-contents)
 

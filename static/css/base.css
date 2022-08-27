@@ -4,6 +4,11 @@
     --dark: #343A40;
 }
 
+.logo {
+    font-weight: 800;
+    font-size: xx-large;
+}
+
 body {
     color: var(--dark);
 }
