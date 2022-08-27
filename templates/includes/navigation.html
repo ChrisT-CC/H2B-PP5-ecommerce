@@ -52,9 +52,16 @@
                     <span><i class="fa-solid fa-magnifying-glass fa-xl text-warning"></i></span>
                     
                 </a>
-                <div class="dropdown-menu dropdown-menu-right p-0" aria-labelledby="search">
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <div class="dropdown-menu dropdown-menu-right p-0 border-0" aria-labelledby="search">
+                    <form method="GET" action="{% url 'products' %}" class="form-inline my-2 my-lg-0">
+                        <!-- <div class="bg-light border border-warning rounded"> -->
+                            <div class="input-group bg-light border border-warning rounded">
+                                <input type="text" placeholder="Search products..." aria-describedby="button-addon1" class="form-control border-0 bg-light" name="q" autofocus>
+                                <div class="input-group-append">
+                                    <button type="submit" class="form-control btn btn-link text-warning"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        <!-- </div> -->
                     </form>
                 </div>
             </li>
@@ -64,9 +71,7 @@
                         <i class="fa-solid fa-cart-shopping fa-xl text-warning"></i>
                     </span>
                     {% if bag_items %}
-                        <!-- {% for item in bag_items %} -->
-                            <span class="bag-count badge badge-dark text-warning">{{ product_count }}</span>
-                        <!-- {% endfor %} -->
+                        <span class="bag-count badge badge-dark text-warning">{{ product_count }}</span>
                     {% endif %}
                 </a>
             </li>
