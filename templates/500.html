@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<!-- Landing section -->
+<section id="404" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <img src="{{ MEDIA_URL }}500.png" width="380" alt="Cartooney bee with 2 buckets of honey looking puzzled">
+                <h2 class="font-weight-bold">500</h2>
+                <h3>Server error</h3>
+                <p>Whoops! Something went wrong.</p>
+                <a class="btn btn-warning text-dark btn-lg" href="{% url 'home' %}">
+                    <strong>Back honey shop</strong>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

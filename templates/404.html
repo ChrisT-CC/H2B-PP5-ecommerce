@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<!-- Landing section -->
+<section id="404" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <img src="{{ MEDIA_URL }}404.png" width="380" alt="404 cartooney image with a round bee instead of zero">
+                <h2>Page not found</h2>
+                <p>The page you are looking for isn't available</p>
+                <a class="btn btn-warning text-dark btn-lg" href="{% url 'home' %}">
+                    <strong>Back honey shop</strong>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
