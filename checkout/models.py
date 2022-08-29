@@ -21,7 +21,7 @@ class Order(models.Model):
     adress_line1 = models.CharField(max_length=80, null=False, blank=False)
     adress_line2 = models.CharField(max_length=80, null=True, blank=True)
     county = models.CharField(max_length=80, null=True, blank=True)
-    postcode = models.CharField(max_length=20, null=True, blank=True)
+    postcode = models.CharField(max_length=20, null=True, blank=False)
     date = models.DateTimeField(auto_now_add=True)
     order_total = models.DecimalField(max_digits=10, decimal_places=2,
                                       null=False, default=0)

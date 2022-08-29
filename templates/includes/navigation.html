@@ -21,9 +21,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'home' %}#about">About</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">ToBe...</a>
-            </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="account" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
@@ -31,11 +28,13 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="account">
                     {% if request.user.is_authenticated %}
+                        <a class="dropdown-item disabled" href="#">Hi <span class="text-warning">{{ request.user }}</span></a>
+                        <div class="dropdown-divider"></div>
                         {% if request.user.is_superuser %}
                             <a class="dropdown-item" href="">Product Management</a>
                             <div class="dropdown-divider"></div>
                         {% endif %}
-                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="{% url 'profile' %}">Profile</a>
                         <a class="dropdown-item" href="#">Orders</a>
                         <a class="dropdown-item" href="#">Wishlist</a>
                         <div class="dropdown-divider"></div>

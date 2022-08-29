@@ -1,0 +1,4 @@
+#profile-update-form input{
+    border: 1px solid var(--warning);
+    background-color: var(--grayish);
+}

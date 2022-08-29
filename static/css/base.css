@@ -2,6 +2,7 @@
 :root {
     --warning: #FFC107;
     --dark: #343A40;
+    --grayish: #E1E5EE;
 }
 
 .logo {
@@ -20,7 +21,7 @@ footer {
 }
 
 #about {
-    background-color: #E1E5EE;
+    background-color: var(--grayish);
 }
 
 .bag-count {
@@ -55,6 +56,11 @@ footer {
 .update-link,
 .remove-item {
     cursor: pointer;
+}
+
+.allauth-form-inner-content input {
+    border: 1px solid var(--warning);
+    background-color: var(--grayish);
 }
 
 /* Toasts */
