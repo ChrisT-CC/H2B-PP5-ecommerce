@@ -22,7 +22,7 @@
             <form class="form mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
                 {% csrf_token %}
                 {{ form|crispy }}
-                <a href="" class="btn btn-warning text-dark float-left">
+                <a href="{% url 'orders' %}" class="btn btn-warning text-dark float-left">
                     <span class="font-weight-bold">Your orders</span>
                 </a>
                 <button class="btn btn-warning text-dark float-right">
